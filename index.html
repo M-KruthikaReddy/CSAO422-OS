@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head><title>Access Control System</title></head>
+<body>
+<h2>Role-Based File Access Form</h2>
+<form action="/cgi-bin/access_control.cgi" method="GET">
+  Username: <input type="text" name="username"><br>
+  Role: <select name="role">
+    <option value="user">user</option>
+    <option value="admin">admin</option>
+  </select><br>
+  Filename: <input type="text" name="filename"><br>
+  Action:
+  <select name="action">
+    <option value="read">read</option>
+    <option value="write">write</option>
+    <option value="delete">delete</option>
+  </select><br><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
